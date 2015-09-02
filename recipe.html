@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепт</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- СЛАЙДЕР -->
+
+<div id="slider_other">
+    <div id="logo_other">
+    </div>
+
+    <div>
+        <ul id="menu_right_other">
+            <li class="menu_right_button1"><a href="">Вход</a></li>
+            <li class="menu_right_button2"><a href="">Регистрация</a></li>
+            <li class="menu_right_button3"><a href="">Поиск</a></li>
+        </ul>
+
+        <div class="menu_right_button1_open">
+            <form name="Вход" id="login" action="URL">
+                <input type="username" name="username" x-autocompletetype="username" placeholder="Логин"><br/>
+                <input type="password" name="password" x-autocompletetype="password" placeholder="Пароль"><br/>
+                <a href="" class="forgot">Забыли пароль?</a><br/>
+                <input type="submit" value="Войти"/>
+            </form>
+            <p>Или войти с помощью соц. сетей:</p>
+            <table>
+                <tr>
+                    <td><a href="" class="vk">ВКонтакте</a></td>
+                    <td><a href="" class="facebook">Facebook</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="twitter">Twitter</a></td>
+                    <td><a href="" class="google">Google+</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="menu_right_button2_open">
+            <form name="Регистрация" id="register" action="URL">
+                <input type="username" name="username" x-autocompletetype="username" placeholder="Логин"><br/>
+                <input type="email" name="email" x-autocompletetype="email" placeholder="Email"><br/>
+                <input type="password" name="password" x-autocompletetype="password" placeholder="Пароль"><br/>
+                <input type="submit" value="Зарегистрироваться"/>
+            </form>
+        </div>
+
+        <div class="menu_right_button3_open">
+            <form name="Поиск" id="search" action="URL">
+                <input type="search2" name="search" x-autocompletetype="search" placeholder="Поиск"><br/>
+                <input type="submit" value="Искать"/>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!-- МЕНЮ -->
+
+<div id="header_other">
+    <div class="container">
+        <ul class="menu">
+            <li><a href="">Главная</a></li>
+            <li><a href="">Поиск рецептов</a>
+                <ul class="submenu1">
+                    <li><a href="">Бла</a></li>
+                    <li><a href="">Кап кап</a></li>
+                    <li><a href="">Сила мощная</a></li>
+                </ul>
+            </li>
+            <li><a href="">Рецепты</a>
+                <ul class="submenu2">
+                    <li><a href="">Дождик</a></li>
+                    <li><a href="">Солнце</a></li>
+                    <li><a href="">Мир</a></li>
+                </ul>
+            </li>
+            <li><a href="">Статьи</a>
+                <ul class="submenu3">
+                    <li><a href="">Люблю</a></li>
+                    <li><a href="">Бонька</a></li>
+                    <li><a href="">Коля</a></li>
+                </ul>
+            </li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- РЕЦЕПТ -->
+
+<div id="recipe">
+    <div class="container">
+        <div class="col_left">
+            <h1>Паста карбонара</h1>
+            <div class="col_left_left">
+                <img class="recipe_author" src="images/author.jpg">
+            </div>
+            <div class="col_left_right">
+                <p class="author_name"><a href="">Лаура Вильсон</a></p>
+                <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                <p><img class="clock" src="images/clock.png"><div class="clock_description">15 минут</div></p>
+            </div>
+
+
+            <div class="slider_recipe">
+
+                <input type="radio" name="slide_switch" id="id1" checked="checked"/>
+                <label for="id1">
+                    <img src="images/carbonara1.jpg" width="130"/>
+                </label>
+                <img src="images/carbonara1.jpg"/>
+
+                <input type="radio" name="slide_switch" id="id2"/>
+                <label for="id2">
+                    <img src="images/carbonara2.jpg" width="130"/>
+                </label>
+                <img src="images/carbonara2.jpg"/>
+
+                <input type="radio" name="slide_switch" id="id3"/>
+                <label for="id3">
+                    <img src="images/carbonara3.jpg" width="130"/>
+                </label>
+                <img src="images/carbonara3.jpg"/>
+
+                <input type="radio" name="slide_switch" id="id4"/>
+                <label for="id4">
+                    <img src="images/carbonara4.jpg" width="130"/>
+                </label>
+                <img src="images/carbonara4.jpg"/>
+
+            </div>
+
+            <div class="null">
+            </div>
+
+            <div class="ingredients">
+                <h3>Ингредиенты</h3>
+                <div class="adjust_recipe">
+                    <p>Сколько порций?</p>
+                    <form name="Пересчитать ингредиенты" id="adjust_recipe" action=""><input type="text"></form>
+                    <button class="button_adjust_recipe">Пересчитать</button>
+                </div>
+                <div class="ingredients_list">
+                    <p><b>100 л.</b> - <a href="">соль</a></p>
+                    <p><b>80 г.</b> - <a href="">колбаса</a></p>
+                    <p><b>10 г.</b> - нежное <a href="">ведро</a></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col_right">
+            <div class="social_icons">
+            </div>
+            <h3>Описание</h3>
+                <p>Лето! Благодатная пора свежих, сочных овощей! Яркий, сочный сладкий перец, лук, помидоры! Это блюдо абсолютно не сложное, но очень вкусное! Всё готовится в одной сковороде!</p>
+            <h3>Пищевая ценность на 100 г.</h3>
+                <div class="nutritional_facts">
+                    <p>Калорийность: 200кКал.</p>
+                    <p>Белки: 10 г.</p>
+                    <p>Жиры: 5 г.</p>
+                    <p>Углеводы: 8 г.</p>
+                </div>
+            <h3>Приготовление</h3>
+                <ol>
+                    <li>Песочное тесто, сливовая кислинка, нежная заливка, и ореховая корочка... все, что нужно для вкусного, несложного в приготовлении пирога!</li>
+                    <li>Простой рецепт отличного и ароматного напитка на зиму. Сохраните в банке немного витаминов и лета! Простой рецепт отличного и ароматного напитка на зиму. Сохраните в банке немного витаминов и лета! </li>
+                    <li>Третий пункт</li>
+                    <li>Песочное тесто, сливовая кислинка, нежная заливка, и ореховая корочка... все, что нужно для вкусного, несложного в приготовлении пирога!</li>
+                    <li>Простой рецепт отличного и ароматного напитка на зиму. Сохраните в банке немного витаминов и лета! Простой рецепт отличного и ароматного напитка на зиму. Сохраните в банке немного витаминов и лета! </li>
+                    <li>Третий пункт</li>
+                    <li>Песочное тесто, сливовая кислинка, нежная заливка, и ореховая корочка... все, что нужно для вкусного, несложного в приготовлении пирога!</li>
+                    <li>Простой рецепт отличного и ароматного напитка на зиму. Сохраните в банке немного витаминов и лета! Простой рецепт отличного и ароматного напитка на зиму. Сохраните в банке немного витаминов и лета! </li>
+                    <li>Третий пункт</li>
+                    <li>Песочное тесто, сливовая кислинка, нежная заливка, и ореховая корочка... все, что нужно для вкусного, несложного в приготовлении пирога!</li>
+                    <li>Простой рецепт отличного и ароматного напитка на зиму. Сохраните в банке немного витаминов и лета! Простой рецепт отличного и ароматного напитка на зиму. Сохраните в банке немного витаминов и лета! </li>
+                    <li>Третий пункт</li>
+                    <li>Песочное тесто, сливовая кислинка, нежная заливка, и ореховая корочка... все, что нужно для вкусного, несложного в приготовлении пирога!</li>
+                    <li>Простой рецепт отличного и ароматного напитка на зиму. Сохраните в банке немного витаминов и лета! Простой рецепт отличного и ароматного напитка на зиму. Сохраните в банке немного витаминов и лета! </li>
+                    <li>Третий пункт</li>
+                </ol>
+
+        </div>
+
+        <div class="more_recipes">
+            <h2>Похожие рецепты</h2>
+
+            <div class="more_recipes_left">
+                <a href="#"><img class="more_recipes_main_img_left" src="/images/111.jpg"/></a>
+                <div class="more_recipes_description">
+                    <h4><a href="#">Творожное суфле</a></h4>
+                    <div class="recipes_list_stars">
+                        <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                    </div>
+                    <p>Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий...</p>
+                </div>
+            </div>
+
+            <div class="more_recipes_right">
+                <a href="#"><img class="more_recipes_main_img_right" src="/images/222.jpg"/></a>
+                <div class="more_recipes_description">
+                    <h4><a href="#">Творожное суфле</a></h4>
+                    <div class="recipes_list_stars">
+                        <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                    </div>
+                    <p>Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий...</p>
+                </div>
+            </div>
+
+            <div class="more_recipes_left">
+                <a href="#"><img class="more_recipes_main_img_left" src="/images/111.jpg"/></a>
+                <div class="more_recipes_description">
+                    <h4><a href="#">Творожное суфле</a></h4>
+                    <div class="recipes_list_stars">
+                        <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                    </div>
+                    <p>Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий...</p>
+                </div>
+            </div>
+
+            <div class="more_recipes_right">
+                <a href="#"><img class="more_recipes_main_img_right" src="/images/222.jpg"/></a>
+                <div class="more_recipes_description">
+                    <h4><a href="#">Творожное суфле</a></h4>
+                    <div class="recipes_list_stars">
+                        <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                    </div>
+                    <p>Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ratings_and_reviews">
+            <h2>Комментарии</h2>
+
+            <div class="ratings_and_reviews_left">
+                <img class="ratings_and_reviews_avatar_left" src="/images/111.jpg"/>
+                <div class="ratings_and_reviews_description">
+                    <h4><a href="#">Майкл Щур</a></h4>
+                    <button class="ratings_and_reviews_reply">Ответить</button>
+                    <small>15.08.2015</small>
+                    <p>Поставил(а) оценку: <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"></p>
+                    <p>Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...</p>
+                    <p class="ratings_and_reviews_more"><a href="#">Ещё</a></p>
+                </div>
+            </div>
+
+            <div class="ratings_and_reviews_right">
+                <img class="ratings_and_reviews_avatar_right" src="/images/222.jpg"/>
+                <div class="ratings_and_reviews_description">
+                    <h4><a href="#">Коля Бараболя</a></h4>
+                    <button class="ratings_and_reviews_reply">Ответить</button>
+                    <small>15.08.2015</small>
+                    <p>Поставил(а) оценку: <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"></p>
+                    <p>Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...</p>
+                    <p class="ratings_and_reviews_more"><a href="#">Ещё</a></p>
+                </div>
+            </div>
+
+            <div class="ratings_and_reviews_left">
+                <img class="ratings_and_reviews_avatar_left" src="/images/111.jpg"/>
+                <div class="ratings_and_reviews_description">
+                    <h4><a href="#">Майкл Щур</a></h4>
+                    <button class="ratings_and_reviews_reply">Ответить</button>
+                    <small>15.08.2015</small>
+                    <p>Поставил(а) оценку: <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"></p>
+                    <p>Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...</p>
+                    <p class="ratings_and_reviews_more"><a href="#">Ещё</a></p>
+                </div>
+            </div>
+
+            <div class="ratings_and_reviews_right">
+                <img class="ratings_and_reviews_avatar_right" src="/images/222.jpg"/>
+                <div class="ratings_and_reviews_description">
+                    <h4><a href="#">Коля Бараболя</a></h4>
+                    <button class="ratings_and_reviews_reply">Ответить</button>
+                    <small>15.08.2015</small>
+                    <p>Поставил(а) оценку: <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png"></p>
+                    <p>Простое и вкусное печенье с хрустящими краями и тающий серединкой...Простое и вкусное печенье с хрустящими краями и тающий серединкой...</p>
+                    <p class="ratings_and_reviews_more"><a href="#">Ещё</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="write_a_review">
+            <p class="write_a_review_p">Добавить комментарий</p>
+            <p><img class="write_a_review_avatar" src="/images/222.jpg"/></p>
+            <p><small>Вы: <a href="#">Элизабет Тейлор</a></small></p>
+            <p class="exit"><a href="#">Выйти</a></p>
+            <p><img src="images/star_grey_50.png"><img src="images/star_grey_50.png"><img src="images/star_grey_50.png"><img src="images/star_grey_50.png"><img src="images/star_grey_50.png"></p>
+            <form name="Добавить комментарий" id="write_a_review" action="URL">
+                <textarea name="Сообщение" required></textarea>
+                <input type="submit" value="Добавить комментарий"/>
+            </form>
+        </div>
+
+        <div class="write_a_review_login">
+            <p>Чтобы оставить комментарий, <a href="#">зарегистрируйтесь</a> или <a href="#">войдите</a> на сайт.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- ФУТЕР 1 -->
+
+<div id="footer1">
+
+    <div class="container_footer1">
+
+        <div id="recipe_categories">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Поиск рецептов</a></li>
+                <li><a href="#">Рецепты</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Поиск рецептов</a></li>
+                <li><a href="#">Рецепты</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div id="photos">
+            <h3>Галерея</h3>
+            <div id="container_photos">
+                <a href="#"><img class="photos_img" src="images/11.jpg" alt="1"></a>
+                <a href="#"><img class="photos_img" src="images/22.jpg" alt="2"></a>
+                <a href="#"><img class="photos_img" src="images/33.jpg" alt="3"></a>
+                <a href="#"><img class="photos_img" src="images/44.jpg" alt="4"></a>
+                <a href="#"><img class="photos_img" src="images/55.jpg" alt="5"></a>
+                <a href="#"><img class="photos_img" src="images/66.jpg" alt="6"></a>
+                <a href="#"><img class="photos_img" src="images/11.jpg" alt="1"></a>
+                <a href="#"><img class="photos_img" src="images/22.jpg" alt="2"></a>
+                <a href="#"><img class="photos_img" src="images/33.jpg" alt="3"></a>
+            </div>
+        </div>
+
+        <div id="recent_recipes">
+            <h3>Последние рецепты</h3>
+            <div id="container_recent_recipes">
+                <div class="container_recent_recipe">
+                    <div class="container_recent_recipe_left"><a href="#"><img class="recent_recipes_img" src="images/111.jpg" alt="1"></a></div><div class="container_recent_recipe_right"><p class="recent_recipes_name"><a href="#">Вкусный кексик</a></p><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><p class="recent_recipes_author">Рецепт <a href="#">Боба Синклера</a></p></div>
+                </div>
+                <div class="container_recent_recipe">
+                    <div class="container_recent_recipe_left"><a href="#"><img class="recent_recipes_img" src="images/222.jpg" alt="1"></a></div><div class="container_recent_recipe_right"><p class="recent_recipes_name"><a href="#">НЕвкусный кексик</a></p><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><p class="recent_recipes_author">Рецепт <a href="#">Боба Синклера</a></p></div>
+                </div>
+                <div class="container_recent_recipe">
+                    <div class="container_recent_recipe_left"><a href="#"><img class="recent_recipes_img" src="images/111.jpg" alt="1"></a></div><div class="container_recent_recipe_right"><p class="recent_recipes_name"><a href="#">Вкусный кексик</a></p><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><p class="recent_recipes_author">Рецепт <a href="#">Боба Синклера</a></p></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ФУТЕР 2 -->
+
+<div id="footer2">
+    <div class="container_footer2">
+        <div id="footer2_left">
+            <p>© 2015 All Rights Reserved. Developed by НАДЬКО :)))</p>
+        </div>
+        <div id="footer2_right">
+            <div class="footer2_right_icons"><a href="#"><img src="images/google.png" alt="google+"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/twitter.png" alt="twitter"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/facebook.png" alt="facebook"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/vkontakte2.png" alt="vkontakte"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/mail.png" alt="Почта"></a></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

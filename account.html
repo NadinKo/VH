@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,900&amp;subset=latin,cyrillic-ext,cyrillic,latin-ext" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- СЛАЙДЕР -->
+
+<div id="slider_other">
+    <div id="logo_other">
+    </div>
+
+    <div>
+        <ul id="menu_right_other">
+            <li class="menu_right_button1"><a href="">Вход</a></li>
+            <li class="menu_right_button2"><a href="">Регистрация</a></li>
+            <li class="menu_right_button3"><a href="">Поиск</a></li>
+        </ul>
+
+        <div class="menu_right_button1_open">
+            <form name="Вход" id="login" action="URL">
+                <input type="username" name="username" x-autocompletetype="username" placeholder="Логин"><br/>
+                <input type="password" name="password" x-autocompletetype="password" placeholder="Пароль"><br/>
+                <a href="" class="forgot">Забыли пароль?</a><br/>
+                <input type="submit" value="Войти"/>
+            </form>
+            <p>Или войти с помощью соц. сетей:</p>
+            <table>
+                <tr>
+                    <td><a href="" class="vk">ВКонтакте</a></td>
+                    <td><a href="" class="facebook">Facebook</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="twitter">Twitter</a></td>
+                    <td><a href="" class="google">Google+</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="menu_right_button2_open">
+            <form name="Регистрация" id="register" action="URL">
+                <input type="username" name="username" x-autocompletetype="username" placeholder="Логин"><br/>
+                <input type="email" name="email" x-autocompletetype="email" placeholder="Email"><br/>
+                <input type="password" name="password" x-autocompletetype="password" placeholder="Пароль"><br/>
+                <input type="submit" value="Зарегистрироваться"/>
+            </form>
+        </div>
+
+        <div class="menu_right_button3_open">
+            <form name="Поиск" id="search" action="URL">
+                <input type="search2" name="search" x-autocompletetype="search" placeholder="Поиск"><br/>
+                <input type="submit" value="Искать"/>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!-- МЕНЮ -->
+
+<div id="header_other">
+    <div class="container">
+        <ul class="menu">
+            <li><a href="">Главная</a></li>
+            <li><a href="">Поиск рецептов</a>
+                <ul class="submenu1">
+                    <li><a href="">Бла</a></li>
+                    <li><a href="">Кап кап</a></li>
+                    <li><a href="">Сила мощная</a></li>
+                </ul>
+            </li>
+            <li><a href="">Рецепты</a>
+                <ul class="submenu2">
+                    <li><a href="">Дождик</a></li>
+                    <li><a href="">Солнце</a></li>
+                    <li><a href="">Мир</a></li>
+                </ul>
+            </li>
+            <li><a href="">Статьи</a>
+                <ul class="submenu3">
+                    <li><a href="">Люблю</a></li>
+                    <li><a href="">Бонька</a></li>
+                    <li><a href="">Коля</a></li>
+                </ul>
+            </li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- ЛИЧНЫЙ КАБИНЕТ -->
+
+<div id="account">
+    <div class="container">
+
+        <h1>Личный кабинет</h1>
+
+        <div class="account_left">
+            <h2>Детали<a href="" class="account_edit">Редактировать</a></h2>
+            <img class="account_author" src="images/author.jpg">
+            <div class="account_left_right">
+                <h3>Катя Катерина</h3>
+                <p><a href="">10 рецептов</a></p>
+                <div class="account_left_stars">
+                    <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                </div>
+            </div>
+            <h3>О себе</h3>
+            <p>На самом деле правила в атрибуте style при верстке используются крайне редко (представьте себе, как трудно будет в этом случае вносить изменения во всем коде сайта, а не в отдельном файле CSS). Этот атрибут в основном используют, когда только нужно что-то быстро протестировать. Ну, и еще это удобно, если вы вставляете свой код в чужие Html странички, которые имеют свое стилевое оформление и которое может унаследоваться (наследование в CSS) и для ваших вставляемых элементов. А зачем и как вставлять свой код на чужие страницы? Нам может и незачем, а Яндекс и Гугл это делают, когда размещают объявления РСЯ или рекламу Гугл Адсенса на чужих площадках (наших с вами сайтах). Добавив во все элементы кода рекламных блоков атрибут style, с прописанными в нем свойствами и добавленным Important, можно уже не беспокоиться о том, что код объявлений будет изменен... Добавив во все элементы кода рекламных блоков атрибут style, с прописанными в нем свойствами и добавленным Important...</p>
+        </div>
+        <div class="account_right">
+            <h2>Друзья<a href="" class="account_edit">Редактировать</a></h2>
+            <a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a><a href="#"><img class="account_friends" src="images/author.jpg"></a>
+        </div>
+
+        <div class="account_my_recipes">
+            <h2>Мои рецепты<a href="" class="account_edit">Редактировать</a></h2>
+
+            <div class="account_my_recipes_container">
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Добавлено: 10.09.2015</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ПЕЙДЖИНГ -->
+
+            <div id="paging">
+                <div class="container_paging_3">
+                    <ul class="pager">
+                        <li class="pager-back"><a href="" title="На предыдущую страницу">НАЗАД</a></li>
+                        <li class="pager-item"><a href="" title="На страницу номер 1">1</a></li>
+                        <li class="pager-item"><a href="" title="На страницу номер 2">2</a></li>
+                        <li class="pager-item"><a href="" title="На страницу номер 3">3</a></li>
+                        <li class="pager-item"><a href="" title="На страницу номер 4">4</a></li>
+                        <li class="pager-item"><a href="" title="На страницу номер 5">5</a></li>
+                        <li class="pager-next"><a href="" title="На следующую страницу">ВПЕРЕД</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="account_my_recipe_collection">
+            <h2 class="account_h2">Книга рецептов<a href="" class="account_edit">Редактировать</a></h2>
+
+            <div class="account_my_recipes_container">
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+                <div class="account_my_recipes_item">
+                    <a href="#"><img class="account_my_recipes_item_img" src="images/222.jpg"></a>
+                    <div class="account_my_recipes_item_right">
+                        <h4><a href="#">Творожное суфле</a></h4>
+                        <div class="account_my_recipes_item_right_star">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                        <p>Автор: <a href="#">Боб Синклер</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ПЕЙДЖИНГ -->
+
+            <div id="paging">
+                <div class="container_paging_3">
+                    <ul class="pager">
+                        <li class="pager-back"><a href="" title="На предыдущую страницу">НАЗАД</a></li>
+                        <li class="pager-item"><a href="" title="На страницу номер 1">1</a></li>
+                        <li class="pager-item"><a href="" title="На страницу номер 2">2</a></li>
+                        <li class="pager-item"><a href="" title="На страницу номер 3">3</a></li>
+                        <li class="pager-item"><a href="" title="На страницу номер 4">4</a></li>
+                        <li class="pager-item"><a href="" title="На страницу номер 5">5</a></li>
+                        <li class="pager-next"><a href="" title="На следующую страницу">ВПЕРЕД</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- ФУТЕР 1 -->
+
+<div id="footer1">
+
+    <div class="container_footer1">
+
+        <div id="recipe_categories">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Поиск рецептов</a></li>
+                <li><a href="#">Рецепты</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Поиск рецептов</a></li>
+                <li><a href="#">Рецепты</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div id="photos">
+            <h3>Галерея</h3>
+            <div id="container_photos">
+                <a href="#"><img class="photos_img" src="images/11.jpg" alt="1"></a>
+                <a href="#"><img class="photos_img" src="images/22.jpg" alt="2"></a>
+                <a href="#"><img class="photos_img" src="images/33.jpg" alt="3"></a>
+                <a href="#"><img class="photos_img" src="images/44.jpg" alt="4"></a>
+                <a href="#"><img class="photos_img" src="images/55.jpg" alt="5"></a>
+                <a href="#"><img class="photos_img" src="images/66.jpg" alt="6"></a>
+                <a href="#"><img class="photos_img" src="images/11.jpg" alt="1"></a>
+                <a href="#"><img class="photos_img" src="images/22.jpg" alt="2"></a>
+                <a href="#"><img class="photos_img" src="images/33.jpg" alt="3"></a>
+            </div>
+        </div>
+
+        <div id="recent_recipes">
+            <h3>Последние рецепты</h3>
+            <div id="container_recent_recipes">
+                <div class="container_recent_recipe">
+                    <div class="container_recent_recipe_left"><a href="#"><img class="recent_recipes_img" src="images/111.jpg" alt="1"></a></div><div class="container_recent_recipe_right"><p class="recent_recipes_name"><a href="#">Вкусный кексик</a></p><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><p class="recent_recipes_author">Рецепт <a href="#">Боба Синклера</a></p></div>
+                </div>
+                <div class="container_recent_recipe">
+                    <div class="container_recent_recipe_left"><a href="#"><img class="recent_recipes_img" src="images/222.jpg" alt="1"></a></div><div class="container_recent_recipe_right"><p class="recent_recipes_name"><a href="#">НЕвкусный кексик</a></p><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><p class="recent_recipes_author">Рецепт <a href="#">Боба Синклера</a></p></div>
+                </div>
+                <div class="container_recent_recipe">
+                    <div class="container_recent_recipe_left"><a href="#"><img class="recent_recipes_img" src="images/111.jpg" alt="1"></a></div><div class="container_recent_recipe_right"><p class="recent_recipes_name"><a href="#">Вкусный кексик</a></p><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><p class="recent_recipes_author">Рецепт <a href="#">Боба Синклера</a></p></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ФУТЕР 2 -->
+
+<div id="footer2">
+    <div class="container_footer2">
+        <div id="footer2_left">
+            <p>© 2015 All Rights Reserved. Developed by НАДЬКО :)))</p>
+        </div>
+        <div id="footer2_right">
+            <div class="footer2_right_icons"><a href="#"><img src="images/google.png" alt="google+"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/twitter.png" alt="twitter"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/facebook.png" alt="facebook"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/vkontakte2.png" alt="vkontakte"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/mail.png" alt="Почта"></a></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

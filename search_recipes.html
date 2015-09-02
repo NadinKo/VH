@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Поиск рецептов</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Lobster&amp;subset=latin,cyrillic,latin-ext" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,900&amp;subset=latin,cyrillic-ext,cyrillic,latin-ext" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- СЛАЙДЕР -->
+
+<div id="slider_other">
+    <div id="logo_other">
+    </div>
+
+    <div>
+        <ul id="menu_right_other">
+            <li class="menu_right_button1"><a href="">Вход</a></li>
+            <li class="menu_right_button2"><a href="">Регистрация</a></li>
+            <li class="menu_right_button3"><a href="">Поиск</a></li>
+        </ul>
+
+        <div class="menu_right_button1_open">
+            <form name="Вход" id="login" action="URL">
+                <input type="username" name="username" x-autocompletetype="username" placeholder="Логин"><br/>
+                <input type="password" name="password" x-autocompletetype="password" placeholder="Пароль"><br/>
+                <a href="" class="forgot">Забыли пароль?</a><br/>
+                <input type="submit" value="Войти"/>
+            </form>
+            <p>Или войти с помощью соц. сетей:</p>
+            <table>
+                <tr>
+                    <td><a href="" class="vk">ВКонтакте</a></td>
+                    <td><a href="" class="facebook">Facebook</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="twitter">Twitter</a></td>
+                    <td><a href="" class="google">Google+</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="menu_right_button2_open">
+            <form name="Регистрация" id="register" action="URL">
+                <input type="username" name="username" x-autocompletetype="username" placeholder="Логин"><br/>
+                <input type="email" name="email" x-autocompletetype="email" placeholder="Email"><br/>
+                <input type="password" name="password" x-autocompletetype="password" placeholder="Пароль"><br/>
+                <input type="submit" value="Зарегистрироваться"/>
+            </form>
+        </div>
+
+        <div class="menu_right_button3_open">
+            <form name="Поиск" id="search" action="URL">
+                <input type="search2" name="search" x-autocompletetype="search" placeholder="Поиск"><br/>
+                <input type="submit" value="Искать"/>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!-- МЕНЮ -->
+
+<div id="header_other">
+    <div class="container">
+        <ul class="menu">
+            <li><a href="">Главная</a></li>
+            <li><a href="">Поиск рецептов</a>
+                <ul class="submenu1">
+                    <li><a href="">Бла</a></li>
+                    <li><a href="">Кап кап</a></li>
+                    <li><a href="">Сила мощная</a></li>
+                </ul>
+            </li>
+            <li><a href="">Рецепты</a>
+                <ul class="submenu2">
+                    <li><a href="">Дождик</a></li>
+                    <li><a href="">Солнце</a></li>
+                    <li><a href="">Мир</a></li>
+                </ul>
+            </li>
+            <li><a href="">Статьи</a>
+                <ul class="submenu3">
+                    <li><a href="">Люблю</a></li>
+                    <li><a href="">Бонька</a></li>
+                    <li><a href="">Коля</a></li>
+                </ul>
+            </li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- ПОИСК РЕЦЕПТОВ -->
+
+<div id="search_recipes">
+    <div class="container">
+        <h1>Поиск рецептов</h1>
+        <img src="/images/instruction.png" usemap="#instructions_map" class="instructions">
+        <map name="instructions_map">
+            <area href="#" shape="rect" coords="800,0,1140,200">
+        </map>
+    </div>
+
+    <div class="container">
+        <div class="search_recipes_vhol_list">
+            <div class="search_recipes_vhol">
+                <div class="search_recipes_vhol_border">
+                <h3>В холодильнике:</h3>
+                <img class="search_recipes_vhol_img" src="/images/polka.png">
+                <ul class="search_recipes_vhol_ul">
+                    <li><a href="">Ваниль</a><a href=""><img class="vhol_close" src="images/vhol_close.png"></a></li>
+                    <li><a href="">Мармелад</a><a href=""><img class="vhol_close" src="images/vhol_close.png"></a></li>
+                    <li><a href="">Сахар</a><a href=""><img class="vhol_close" src="images/vhol_close.png"></a></li>
+                    <li><a href="">Сыр</a><a href=""><img class="vhol_close" src="images/vhol_close.png"></a></li>
+                    <li><a href="">Яблоки</a><a href=""><img class="vhol_close" src="images/vhol_close.png"></a></li>
+                </ul>
+
+                <div class="search_recipes_vhol_add">
+                <h4>Добавить:</h4>
+                <select class="search_recipes_vhol_select">
+                    <option>Пункт 1</option>
+                    <option>Пункт 2</option>
+                </select>
+                <button class="button_search_recipes">ОК</button>
+                </div>
+
+                <h3>Черный список:</h3>
+                <img class="search_recipes_vhol_img" src="/images/polka2.png">
+                <ul class="search_recipes_vhol_ul">
+                    <li><a href="">Ваниль</a><a href=""><img class="vhol_close" src="images/vhol_close.png"></a></li>
+                    <li><a href="">Мармелад</a><a href=""><img class="vhol_close" src="images/vhol_close.png"></a></li>
+                    <li><a href="">Сахар</a><a href=""><img class="vhol_close" src="images/vhol_close.png"></a></li>
+                    <li><a href="">Сыр</a><a href=""><img class="vhol_close" src="images/vhol_close.png"></a></li>
+                    <li><a href="">Яблоки</a><a href=""><img class="vhol_close" src="images/vhol_close.png"></a></li>
+                </ul>
+
+                <div class="search_recipes_vhol_add">
+                <h4>Добавить:</h4>
+                <select class="search_recipes_vhol_select">
+                    <option>Пункт 1</option>
+                    <option>Пункт 2</option>
+                </select>
+                <button class="button_search_recipes">ОК</button>
+                </div>
+                </div>
+            </div>
+            <div class="search_recipes_list">
+
+                <div class="search_recipes_list_filter">
+                    <ul>
+                        <li><a href="">Новые</a></li>
+                        <li><a href="">Лучшие</a></li>
+                        <li><a href="">Быстрые</a></li>
+                        <li><a href="">Вегетарианские</a></li>
+                        <li><a href="">Веганские</a></li>
+                    </ul>
+                </div>
+
+                <div class="search_recipes_list_recipes">
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                    <div class="search_recipes_list_recipe">
+                        <a href=""><img class="search_recipes_list_recipe_img" src="/images/222.jpg"></a>
+                        <p><a href="">Жареный тушканчик</a></p>
+                        <div class="search_recipes_list_recipe_stars">
+                            <img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_blue_17.png"><img class="recipes_list_star" src="images/star_grey_17.png">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ПЕЙДЖИНГ -->
+
+                <div id="paging">
+                    <div class="container_paging_2">
+                        <ul class="pager">
+                            <li class="pager-back"><a href="" title="На предыдущую страницу">НАЗАД</a></li>
+                            <li class="pager-item"><a href="" title="На страницу номер 1">1</a></li>
+                            <li class="pager-item"><a href="" title="На страницу номер 2">2</a></li>
+                            <li class="pager-item"><a href="" title="На страницу номер 3">3</a></li>
+                            <li class="pager-item"><a href="" title="На страницу номер 4">4</a></li>
+                            <li class="pager-item"><a href="" title="На страницу номер 5">5</a></li>
+                            <li class="pager-next"><a href="" title="На следующую страницу">ВПЕРЕД</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            <div class="search_recipes_filter">
+                <div onclick="tree_toggle(arguments[0])">
+                    <h3>Категории рецептов:</h3>
+                    <ul class="sidebar_container">
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Бульоны и супы<input type="checkbox" id="checkbox1"><label for="checkbox1"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Горячие супы<input type="checkbox" id="checkbox2"><label for="checkbox2"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Борщ<input type="checkbox" id="checkbox3"><label for="checkbox3"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Солянка<input type="checkbox" id="checkbox4"><label for="checkbox4"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Харчо<input type="checkbox" id="checkbox5"><label for="checkbox5"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Щи<input type="checkbox" id="checkbox6"><label for="checkbox6"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Рассольник<input type="checkbox" id="checkbox7"><label for="checkbox7"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Суп-лапша<input type="checkbox" id="checkbox8"><label for="checkbox8"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Суп-пюре<input type="checkbox" id="checkbox9"><label for="checkbox9"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Молочный суп<input type="checkbox" id="checkbox10"><label for="checkbox10"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Рыбный суп<input type="checkbox" id="checkbox11"><label for="checkbox11"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Другие супы<input type="checkbox" id="checkbox12"><label for="checkbox12"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Бульоны<input type="checkbox" id="checkbox13"><label for="checkbox13"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Овощной бульон<input type="checkbox" id="checkbox14"><label for="checkbox14"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Мясной бульон<input type="checkbox" id="checkbox15"><label for="checkbox15"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Куриный бульон<input type="checkbox" id="checkbox16"><label for="checkbox16"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Рыбный бульон<input type="checkbox" id="checkbox17"><label for="checkbox17"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Холодные супы<input type="checkbox" id="checkbox18"><label for="checkbox18"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Окрошка<input type="checkbox" id="checkbox19"><label for="checkbox19"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Холодный суп-пюре<input type="checkbox" id="checkbox20"><label for="checkbox20"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Фруктово-ягодный суп<input type="checkbox" id="checkbox21"><label for="checkbox21"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Горячие блюда<input type="checkbox" id="checkbox22"><label for="checkbox22"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из овощей, грибов, бобовых<input type="checkbox" id="checkbox23"><label for="checkbox23"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из овощей<input type="checkbox" id="checkbox24"><label for="checkbox24"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда с грибами<input type="checkbox" id="checkbox25"><label for="checkbox25"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из бобовых<input type="checkbox" id="checkbox26"><label for="checkbox26"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Фаршированные овощи<input type="checkbox" id="checkbox27"><label for="checkbox27"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие овощные рулеты<input type="checkbox" id="checkbox28"><label for="checkbox28"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Шашлык из овощей<input type="checkbox" id="checkbox29"><label for="checkbox29"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из мяса<input type="checkbox" id="checkbox30"><label for="checkbox30"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Плов<input type="checkbox" id="checkbox31"><label for="checkbox31"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Рагу овощное с мясом<input type="checkbox" id="checkbox32"><label for="checkbox32"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Шашлык<input type="checkbox" id="checkbox33"><label for="checkbox33"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Фаршированное мясо<input type="checkbox" id="checkbox34"><label for="checkbox34"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из свинины<input type="checkbox" id="checkbox35"><label for="checkbox35"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из говядины<input type="checkbox" id="checkbox36"><label for="checkbox36"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из телятины<input type="checkbox" id="checkbox37"><label for="checkbox37"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из баранины<input type="checkbox" id="checkbox38"><label for="checkbox38"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из мясных субпродуктов<input type="checkbox" id="checkbox39"><label for="checkbox39"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из кролика, зайца<input type="checkbox" id="checkbox40"><label for="checkbox40"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда с колбасными изделиями<input type="checkbox" id="checkbox41"><label for="checkbox41"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из птицы<input type="checkbox" id="checkbox42"><label for="checkbox42"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Шашлык из птицы<input type="checkbox" id="checkbox43"><label for="checkbox43"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Фаршированная птица<input type="checkbox" id="checkbox44"><label for="checkbox44"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из курицы<input type="checkbox" id="checkbox45"><label for="checkbox45"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из индейки<input type="checkbox" id="checkbox46"><label for="checkbox46"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из утки<input type="checkbox" id="checkbox47"><label for="checkbox47"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из дичи<input type="checkbox" id="checkbox48"><label for="checkbox48"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из субпродуктов птицы<input type="checkbox" id="checkbox49"><label for="checkbox49"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из фарша<input type="checkbox" id="checkbox50"><label for="checkbox50"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из мясного фарша<input type="checkbox" id="checkbox51"><label for="checkbox51"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из фарша птицы<input type="checkbox" id="checkbox52"><label for="checkbox52"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из рыбного фарша<input type="checkbox" id="checkbox53"><label for="checkbox53"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из смешанного фарша<input type="checkbox" id="checkbox54"><label for="checkbox54"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Шашлык из фарша<input type="checkbox" id="checkbox55"><label for="checkbox55"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из яиц<input type="checkbox" id="checkbox56"><label for="checkbox56"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из рыбы и морепродуктов<input type="checkbox" id="checkbox57"><label for="checkbox57"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из рыбы<input type="checkbox" id="checkbox58"><label for="checkbox58"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из морепродуктов<input type="checkbox" id="checkbox59"><label for="checkbox59"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Горячие блюда из рыбных субпродуктов<input type="checkbox" id="checkbox60"><label for="checkbox60"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Шашлык из рыбы и морепродуктов<input type="checkbox" id="checkbox61"><label for="checkbox61"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Фаршированная рыба и морепродукты<input type="checkbox" id="checkbox62"><label for="checkbox62"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Гарнир<input type="checkbox" id="checkbox63"><label for="checkbox63"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Гарнир из круп<input type="checkbox" id="checkbox64"><label for="checkbox64"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Овощной гарнир<input type="checkbox" id="checkbox65"><label for="checkbox65"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Картофельный гарнир<input type="checkbox" id="checkbox66"><label for="checkbox66"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Макаронные изделия<input type="checkbox" id="checkbox67"><label for="checkbox67"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из круп<input type="checkbox" id="checkbox68"><label for="checkbox68"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Мучные блюда<input type="checkbox" id="checkbox69"><label for="checkbox69"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Вареники<input type="checkbox" id="checkbox70"><label for="checkbox70"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Пельмени, манты, хинкали<input type="checkbox" id="checkbox71"><label for="checkbox71"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Паста<input type="checkbox" id="checkbox72"><label for="checkbox72"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Запеканки<input type="checkbox" id="checkbox73"><label for="checkbox73"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Запеканка с овощами<input type="checkbox" id="checkbox74"><label for="checkbox74"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Запеканка с грибами<input type="checkbox" id="checkbox75"><label for="checkbox75"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Запеканка с творогом<input type="checkbox" id="checkbox76"><label for="checkbox76"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Запеканка с мясом<input type="checkbox" id="checkbox77"><label for="checkbox77"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда на гриле<input type="checkbox" id="checkbox78"><label for="checkbox78"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Овощи на гриле<input type="checkbox" id="checkbox79"><label for="checkbox79"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Мясо на гриле<input type="checkbox" id="checkbox80"><label for="checkbox80"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Птица на гриле<input type="checkbox" id="checkbox81"><label for="checkbox81"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Рыба на гриле<input type="checkbox" id="checkbox82"><label for="checkbox82"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Горячие блюда в горшочках<input type="checkbox" id="checkbox83"><label for="checkbox83"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Горячие блюда в казане<input type="checkbox" id="checkbox84"><label for="checkbox84"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Горячие блюда в микроволновке<input type="checkbox" id="checkbox85"><label for="checkbox85"></label></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Салаты<input type="checkbox" id="checkbox86"><label for="checkbox86"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Салаты из овощей, грибов, сыра<input type="checkbox" id="checkbox87"><label for="checkbox87"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из овощей<input type="checkbox" id="checkbox88"><label for="checkbox88"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты с грибами<input type="checkbox" id="checkbox89"><label for="checkbox89"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из бобовых<input type="checkbox" id="checkbox90"><label for="checkbox90"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из сыра<input type="checkbox" id="checkbox91"><label for="checkbox91"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Салаты из мяса<input type="checkbox" id="checkbox92"><label for="checkbox92"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из свинины<input type="checkbox" id="checkbox93"><label for="checkbox93"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из говядины<input type="checkbox" id="checkbox94"><label for="checkbox94"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из телятины<input type="checkbox" id="checkbox95"><label for="checkbox95"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из баранины<input type="checkbox" id="checkbox96"><label for="checkbox96"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из ветчины<input type="checkbox" id="checkbox97"><label for="checkbox97"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты с колбасными изделиями<input type="checkbox" id="checkbox98"><label for="checkbox98"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из мясных субпродуктов<input type="checkbox" id="checkbox99"><label for="checkbox99"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Салаты из птицы<input type="checkbox" id="checkbox100"><label for="checkbox100"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из курицы<input type="checkbox" id="checkbox101"><label for="checkbox101"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из индейки<input type="checkbox" id="checkbox102"><label for="checkbox102"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из утки<input type="checkbox" id="checkbox103"><label for="checkbox103"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из субпродуктов птицы<input type="checkbox" id="checkbox104"><label for="checkbox104"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Салаты из рыбы и морепродуктов<input type="checkbox" id="checkbox105"><label for="checkbox105"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Рыбные салаты<input type="checkbox" id="checkbox106"><label for="checkbox106"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Салаты из морепродуктов<input type="checkbox" id="checkbox107"><label for="checkbox107"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Закуски<input type="checkbox" id="checkbox108"><label for="checkbox108"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Закуски из овощей<input type="checkbox" id="checkbox109"><label for="checkbox109"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Закуски с грибами<input type="checkbox" id="checkbox110"><label for="checkbox110"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Закуски из сыра<input type="checkbox" id="checkbox111"><label for="checkbox111"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Закуски из яиц<input type="checkbox" id="checkbox112"><label for="checkbox112"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Закуски из мяса<input type="checkbox" id="checkbox113"><label for="checkbox113"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Закуски из субпродуктов<input type="checkbox" id="checkbox114"><label for="checkbox114"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Закуски с колбасными изделиями<input type="checkbox" id="checkbox115"><label for="checkbox115"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Закуски из рыбы и морепродуктов<input type="checkbox" id="checkbox116"><label for="checkbox116"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Суши, роллы<input type="checkbox" id="checkbox117"><label for="checkbox117"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Бутерброды<input type="checkbox" id="checkbox118"><label for="checkbox118"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Открытый бутерброд<input type="checkbox" id="checkbox119"><label for="checkbox119"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Закрытый бутерброд<input type="checkbox" id="checkbox120"><label for="checkbox120"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Тарталетки, волованы<input type="checkbox" id="checkbox121"><label for="checkbox121"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Канапе<input type="checkbox" id="checkbox122"><label for="checkbox122"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Паштеты<input type="checkbox" id="checkbox123"><label for="checkbox123"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Закусочные торты<input type="checkbox" id="checkbox124"><label for="checkbox124"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Овощные закусочные торты<input type="checkbox" id="checkbox125"><label for="checkbox125"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Грибные закусочные торты<input type="checkbox" id="checkbox126"><label for="checkbox126"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Сырные и творожные закусочные торты<input type="checkbox" id="checkbox127"><label for="checkbox127"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Мясные закусочные торты<input type="checkbox" id="checkbox128"><label for="checkbox128"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Рыбные закусочные торты<input type="checkbox" id="checkbox129"><label for="checkbox129"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Закусочные кексы, маффины<input type="checkbox" id="checkbox130"><label for="checkbox130"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Рулеты<input type="checkbox" id="checkbox131"><label for="checkbox131"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Овощные рулеты<input type="checkbox" id="checkbox132"><label for="checkbox132"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Сырные рулеты<input type="checkbox" id="checkbox133"><label for="checkbox133"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Мясные рулеты<input type="checkbox" id="checkbox134"><label for="checkbox134"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Рыбные рулеты<input type="checkbox" id="checkbox135"><label for="checkbox135"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Заливное<input type="checkbox" id="checkbox136"><label for="checkbox136"></label></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Соусы<input type="checkbox" id="checkbox137"><label for="checkbox137"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Салатная заправка<input type="checkbox" id="checkbox138"><label for="checkbox138"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Домашний майонез<input type="checkbox" id="checkbox139"><label for="checkbox139"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Соус к мясу<input type="checkbox" id="checkbox140"><label for="checkbox140"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Соус к птице<input type="checkbox" id="checkbox141"><label for="checkbox141"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Соус к рыбе<input type="checkbox" id="checkbox142"><label for="checkbox142"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Другие соусы<input type="checkbox" id="checkbox143"><label for="checkbox143"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Сладкий соус<input type="checkbox" id="checkbox144"><label for="checkbox144"></label></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Выпечка<input type="checkbox" id="checkbox145"><label for="checkbox145"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Булочки<input type="checkbox" id="checkbox146"><label for="checkbox146"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Слойки<input type="checkbox" id="checkbox147"><label for="checkbox147"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Кексы<input type="checkbox" id="checkbox148"><label for="checkbox148"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Пироги<input type="checkbox" id="checkbox149"><label for="checkbox149"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Пицца<input type="checkbox" id="checkbox150"><label for="checkbox150"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Рулеты<input type="checkbox" id="checkbox151"><label for="checkbox151"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Куличи<input type="checkbox" id="checkbox152"><label for="checkbox152"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Домашний хлеб<input type="checkbox" id="checkbox153"><label for="checkbox153"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Пончики<input type="checkbox" id="checkbox154"><label for="checkbox154"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Чебуреки<input type="checkbox" id="checkbox155"><label for="checkbox155"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блины, оладьи, сырники<input type="checkbox" id="checkbox156"><label for="checkbox156"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блины<input type="checkbox" id="checkbox157"><label for="checkbox157"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Оладьи<input type="checkbox" id="checkbox158"><label for="checkbox158"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Сырники<input type="checkbox" id="checkbox159"><label for="checkbox159"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Начинка для блинов<input type="checkbox" id="checkbox160"><label for="checkbox160"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Тесто<input type="checkbox" id="checkbox161"><label for="checkbox161"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Слоеное тесто<input type="checkbox" id="checkbox162"><label for="checkbox162"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Дрожжевое тесто<input type="checkbox" id="checkbox163"><label for="checkbox163"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Бисквитное тесто<input type="checkbox" id="checkbox164"><label for="checkbox164"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Песочное тесто<input type="checkbox" id="checkbox165"><label for="checkbox165"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Заварное тесто<input type="checkbox" id="checkbox166"><label for="checkbox166"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Пресное тесто<input type="checkbox" id="checkbox167"><label for="checkbox167"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Другие изделия<input type="checkbox" id="checkbox168"><label for="checkbox168"></label></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Десерты<input type="checkbox" id="checkbox169"><label for="checkbox169"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Печенье<input type="checkbox" id="checkbox170"><label for="checkbox170"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Бисквитное печенье<input type="checkbox" id="checkbox171"><label for="checkbox171"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Песочное печенье<input type="checkbox" id="checkbox172"><label for="checkbox172"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Печенье с начинкой<input type="checkbox" id="checkbox173"><label for="checkbox173"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Творожное печенье<input type="checkbox" id="checkbox174"><label for="checkbox174"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Безе<input type="checkbox" id="checkbox175"><label for="checkbox175"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Пряники<input type="checkbox" id="checkbox176"><label for="checkbox176"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Пряничное тесто<input type="checkbox" id="checkbox177"><label for="checkbox177"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Пирожные<input type="checkbox" id="checkbox178"><label for="checkbox178"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Конфеты<input type="checkbox" id="checkbox179"><label for="checkbox179"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Вафли<input type="checkbox" id="checkbox180"><label for="checkbox180"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Торты<input type="checkbox" id="checkbox181"><label for="checkbox181"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Слоеный торт<input type="checkbox" id="checkbox182"><label for="checkbox182"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Бисквитный торт<input type="checkbox" id="checkbox183"><label for="checkbox183"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Песочный торт<input type="checkbox" id="checkbox184"><label for="checkbox184"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Без выпечки<input type="checkbox" id="checkbox185"><label for="checkbox185"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Творожный торт<input type="checkbox" id="checkbox186"><label for="checkbox186"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Торт с безе<input type="checkbox" id="checkbox187"><label for="checkbox187"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Торт-суфле<input type="checkbox" id="checkbox188"><label for="checkbox188"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Чизкейк<input type="checkbox" id="checkbox189"><label for="checkbox189"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Чизкейк с выпечкой<input type="checkbox" id="checkbox190"><label for="checkbox190"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Чизкейк без выпечки<input type="checkbox" id="checkbox191"><label for="checkbox191"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Мороженое<input type="checkbox" id="checkbox192"><label for="checkbox192"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Фруктовые десерты<input type="checkbox" id="checkbox193"><label for="checkbox193"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Другие десерты<input type="checkbox" id="checkbox194"><label for="checkbox194"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Пудинги<input type="checkbox" id="checkbox195"><label for="checkbox195"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Муссы<input type="checkbox" id="checkbox196"><label for="checkbox196"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Желе<input type="checkbox" id="checkbox197"><label for="checkbox197"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Творожные десерты<input type="checkbox" id="checkbox198"><label for="checkbox198"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Сладкие рулеты<input type="checkbox" id="checkbox199"><label for="checkbox199"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Десертные крема<input type="checkbox" id="checkbox200"><label for="checkbox200"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Готовим в мультиварке<input type="checkbox" id="checkbox201"><label for="checkbox201"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Бульоны и супы в мультиварке<input type="checkbox" id="checkbox202"><label for="checkbox202"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Суп в мультиварке<input type="checkbox" id="checkbox203"><label for="checkbox203"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Бульон в мультиварке<input type="checkbox" id="checkbox204"><label for="checkbox204"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из овощей в мультиварке<input type="checkbox" id="checkbox205"><label for="checkbox205"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из круп и бобовых в мультиварке<input type="checkbox" id="checkbox206"><label for="checkbox206"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из круп в мультиварке<input type="checkbox" id="checkbox207"><label for="checkbox207"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из бобовых в мультиварке<input type="checkbox" id="checkbox208"><label for="checkbox208"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из мяса в мультиварке<input type="checkbox" id="checkbox209"><label for="checkbox209"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из свинины в мультиварке<input type="checkbox" id="checkbox210"><label for="checkbox210"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из говядины в мультиварке<input type="checkbox" id="checkbox211"><label for="checkbox211"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из телятины в мультиварке<input type="checkbox" id="checkbox212"><label for="checkbox212"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из баранины в мультиварке<input type="checkbox" id="checkbox213"><label for="checkbox213"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из мясных субпродуктов в мультиварке<input type="checkbox" id="checkbox214"><label for="checkbox214"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Другие мясные блюда в мультиварке<input type="checkbox" id="checkbox215"><label for="checkbox215"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из птицы в мультиварке<input type="checkbox" id="checkbox216"><label for="checkbox216"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из рыбы и морепродуктов в мультиварке<input type="checkbox" id="checkbox217"><label for="checkbox217"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из рыбы в мультиварке<input type="checkbox" id="checkbox218"><label for="checkbox218"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из морепродуктов в мультиварке<input type="checkbox" id="checkbox219"><label for="checkbox219"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из фарша в мультиварке<input type="checkbox" id="checkbox220"><label for="checkbox220"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из мясного фарша в мультиварке<input type="checkbox" id="checkbox221"><label for="checkbox221"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из куриного фарша в мультиварке<input type="checkbox" id="checkbox222"><label for="checkbox222"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Блюда из рыбного фарша в мультиварке<input type="checkbox" id="checkbox223"><label for="checkbox223"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из теста в мультиварке<input type="checkbox" id="checkbox224"><label for="checkbox224"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Пирог в мультиварке<input type="checkbox" id="checkbox225"><label for="checkbox225"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Торт в мультиварке<input type="checkbox" id="checkbox226"><label for="checkbox226"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Хлеб в мультиварке<input type="checkbox" id="checkbox227"><label for="checkbox227"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Запеканки в мультиварке<input type="checkbox" id="checkbox228"><label for="checkbox228"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Йогурт в мультиварке<input type="checkbox" id="checkbox229"><label for="checkbox229"></label></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Готовим в пароварке<input type="checkbox" id="checkbox230"><label for="checkbox230"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из овощей в пароварке<input type="checkbox" id="checkbox231"><label for="checkbox231"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из круп в пароварке<input type="checkbox" id="checkbox232"><label for="checkbox232"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из яиц в пароварке<input type="checkbox" id="checkbox233"><label for="checkbox233"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из мяса в пароварке<input type="checkbox" id="checkbox234"><label for="checkbox234"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Из свинины<input type="checkbox" id="checkbox235"><label for="checkbox235"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Из говядины<input type="checkbox" id="checkbox236"><label for="checkbox236"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Из телятины<input type="checkbox" id="checkbox237"><label for="checkbox237"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Из баранины<input type="checkbox" id="checkbox238"><label for="checkbox238"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Из кролика, зайца<input type="checkbox" id="checkbox239"><label for="checkbox239"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Субпродукты<input type="checkbox" id="checkbox240"><label for="checkbox240"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из птицы в пароварке<input type="checkbox" id="checkbox241"><label for="checkbox241"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Из курицы<input type="checkbox" id="checkbox242"><label for="checkbox242"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Из индейки<input type="checkbox" id="checkbox243"><label for="checkbox243"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Из утки<input type="checkbox" id="checkbox244"><label for="checkbox244"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Дичь<input type="checkbox" id="checkbox245"><label for="checkbox245"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Субпродукты<input type="checkbox" id="checkbox246"><label for="checkbox246"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из рыбы в пароварке<input type="checkbox" id="checkbox247"><label for="checkbox247"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Из рыбы<input type="checkbox" id="checkbox248"><label for="checkbox248"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Из морепродуктов<input type="checkbox" id="checkbox249"><label for="checkbox249"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Субпродукты<input type="checkbox" id="checkbox250"><label for="checkbox250"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из фарша в пароварке<input type="checkbox" id="checkbox251"><label for="checkbox251"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Выпечка в пароварке<input type="checkbox" id="checkbox252"><label for="checkbox252"></label></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandLeaf">
+                            <div class="Expand"></div>
+                            <div class="Content">Готовим в хлебопечке<input type="checkbox" id="checkbox253"><label for="checkbox253"></label></div>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Готовим в аэрогриле<input type="checkbox" id="checkbox254"><label for="checkbox254"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Бульоны и супы в аэрогриле<input type="checkbox" id="checkbox255"><label for="checkbox255"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из овощей в аэрогриле<input type="checkbox" id="checkbox256"><label for="checkbox256"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из мяса в аэрогриле<input type="checkbox" id="checkbox257"><label for="checkbox257"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из птицы в аэрогриле<input type="checkbox" id="checkbox258"><label for="checkbox258"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Блюда из рыбы в аэрогриле<input type="checkbox" id="checkbox259"><label for="checkbox259"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Выпечка в аэрогриле<input type="checkbox" id="checkbox260"><label for="checkbox260"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Запеканки в аэрогриле<input type="checkbox" id="checkbox261"><label for="checkbox261"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Сладкие блюда в аэрогриле<input type="checkbox" id="checkbox262"><label for="checkbox262"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Заготовки в аэрогриле<input type="checkbox" id="checkbox263"><label for="checkbox263"></label></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Приготовление молочных продуктов<input type="checkbox" id="checkbox264"><label for="checkbox264"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Домашнее топленое молоко<input type="checkbox" id="checkbox265"><label for="checkbox265"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Домашний йогурт<input type="checkbox" id="checkbox266"><label for="checkbox266"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Домашняя ряженка<input type="checkbox" id="checkbox267"><label for="checkbox267"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Домашний творог<input type="checkbox" id="checkbox268"><label for="checkbox268"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Домашний сыр<input type="checkbox" id="checkbox269"><label for="checkbox269"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Домашняя сметана<input type="checkbox" id="checkbox270"><label for="checkbox270"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Домашнее масло<input type="checkbox" id="checkbox271"><label for="checkbox271"></label></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed">
+                            <div class="Expand"></div>
+                            <div class="Content">Заготовки<input type="checkbox" id="checkbox272"><label for="checkbox272"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Заморозка<input type="checkbox" id="checkbox273"><label for="checkbox273"></label></div>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Соленья<input type="checkbox" id="checkbox274"><label for="checkbox274"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Овощи<input type="checkbox" id="checkbox275"><label for="checkbox275"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Огурцы<input type="checkbox" id="checkbox276"><label for="checkbox276"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Помидоры<input type="checkbox" id="checkbox277"><label for="checkbox277"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Грибы<input type="checkbox" id="checkbox278"><label for="checkbox278"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Ассорти<input type="checkbox" id="checkbox279"><label for="checkbox279"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandClosed">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Маринады<input type="checkbox" id="checkbox280"><label for="checkbox280"></label></div>
+                                    <ul class="sidebar_container">
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Овощи<input type="checkbox" id="checkbox281"><label for="checkbox281"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Огурцы<input type="checkbox" id="checkbox282"><label for="checkbox282"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Помидоры<input type="checkbox" id="checkbox283"><label for="checkbox283"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Грибы<input type="checkbox" id="checkbox284"><label for="checkbox284"></label></div>
+                                        </li>
+                                        <li class="Node ExpandLeaf IsLast">
+                                            <div class="Expand"></div>
+                                            <div class="Content">Ассорти<input type="checkbox" id="checkbox285"><label for="checkbox285"></label></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Овощные салаты<input type="checkbox" id="checkbox286"><label for="checkbox286"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Икра<input type="checkbox" id="checkbox287"><label for="checkbox287"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Зелень<input type="checkbox" id="checkbox288"><label for="checkbox288"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Консервированное мясо<input type="checkbox" id="checkbox289"><label for="checkbox289"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Консервированные плоды<input type="checkbox" id="checkbox290"><label for="checkbox290"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Компот<input type="checkbox" id="checkbox291"><label for="checkbox291"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Варенье<input type="checkbox" id="checkbox292"><label for="checkbox292"></label></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Node IsRoot ExpandClosed IsLast">
+                            <div class="Expand"></div>
+                            <div class="Content">Украшения для блюд<input type="checkbox" id="checkbox293"><label for="checkbox293"></label></div>
+                            <ul class="sidebar_container">
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Глазурь и помадка<input type="checkbox" id="checkbox294"><label for="checkbox294"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Украшения из крема<input type="checkbox" id="checkbox295"><label for="checkbox295"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Украшения из теста<input type="checkbox" id="checkbox296"><label for="checkbox296"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Украшения из мастики<input type="checkbox" id="checkbox297"><label for="checkbox297"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Украшения из овощей<input type="checkbox" id="checkbox298"><label for="checkbox298"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Украшения из фруктов<input type="checkbox" id="checkbox299"><label for="checkbox299"></label></div>
+                                </li>
+                                <li class="Node ExpandLeaf IsLast">
+                                    <div class="Expand"></div>
+                                    <div class="Content">Другие украшения<input type="checkbox" id="checkbox300"><label for="checkbox300"></label></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <script type="text/javascript">
+
+                    function tree_toggle(event) {
+                        event = event || window.event
+                        var clickedElem = event.target || event.srcElement
+
+                        if (!hasClass(clickedElem, 'Expand')) {
+                            return // клик не там
+                        }
+
+                        // Node, на который кликнули
+                        var node = clickedElem.parentNode
+                        if (hasClass(node, 'ExpandLeaf')) {
+                            return // клик на листе
+                        }
+
+                        // определить новый класс для узла
+                        var newClass = hasClass(node, 'ExpandOpen') ? 'ExpandClosed' : 'ExpandOpen'
+                        // заменить текущий класс на newClass
+                        // регексп находит отдельно стоящий open|close и меняет на newClass
+                        var re =  /(^|\s)(ExpandOpen|ExpandClosed)(\s|$)/
+                        node.className = node.className.replace(re, '$1'+newClass+'$3')
+                    }
+
+
+                    function hasClass(elem, className) {
+                        return new RegExp("(^|\\s)"+className+"(\\s|$)").test(elem.className)
+                    }
+                </script>
+            </div>
+    </div>
+</div>
+
+<!-- ФУТЕР 1 -->
+
+<div id="footer1">
+
+    <div class="container_footer1">
+
+        <div id="recipe_categories">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Поиск рецептов</a></li>
+                <li><a href="#">Рецепты</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Поиск рецептов</a></li>
+                <li><a href="#">Рецепты</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div id="photos">
+            <h3>Галерея</h3>
+            <div id="container_photos">
+                <a href="#"><img class="photos_img" src="images/11.jpg" alt="1"></a>
+                <a href="#"><img class="photos_img" src="images/22.jpg" alt="2"></a>
+                <a href="#"><img class="photos_img" src="images/33.jpg" alt="3"></a>
+                <a href="#"><img class="photos_img" src="images/44.jpg" alt="4"></a>
+                <a href="#"><img class="photos_img" src="images/55.jpg" alt="5"></a>
+                <a href="#"><img class="photos_img" src="images/66.jpg" alt="6"></a>
+                <a href="#"><img class="photos_img" src="images/11.jpg" alt="1"></a>
+                <a href="#"><img class="photos_img" src="images/22.jpg" alt="2"></a>
+                <a href="#"><img class="photos_img" src="images/33.jpg" alt="3"></a>
+            </div>
+        </div>
+
+        <div id="recent_recipes">
+            <h3>Последние рецепты</h3>
+            <div id="container_recent_recipes">
+                <div class="container_recent_recipe">
+                    <div class="container_recent_recipe_left"><a href="#"><img class="recent_recipes_img" src="images/111.jpg" alt="1"></a></div><div class="container_recent_recipe_right"><p class="recent_recipes_name"><a href="#">Вкусный кексик</a></p><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><p class="recent_recipes_author">Рецепт <a href="#">Боба Синклера</a></p></div>
+                </div>
+                <div class="container_recent_recipe">
+                    <div class="container_recent_recipe_left"><a href="#"><img class="recent_recipes_img" src="images/222.jpg" alt="1"></a></div><div class="container_recent_recipe_right"><p class="recent_recipes_name"><a href="#">НЕвкусный кексик</a></p><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><p class="recent_recipes_author">Рецепт <a href="#">Боба Синклера</a></p></div>
+                </div>
+                <div class="container_recent_recipe">
+                    <div class="container_recent_recipe_left"><a href="#"><img class="recent_recipes_img" src="images/111.jpg" alt="1"></a></div><div class="container_recent_recipe_right"><p class="recent_recipes_name"><a href="#">Вкусный кексик</a></p><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_black.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><img class="recent_recipes_img_2" src="images/star_white.png" alt="1"><p class="recent_recipes_author">Рецепт <a href="#">Боба Синклера</a></p></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ФУТЕР 2 -->
+
+<div id="footer2">
+    <div class="container_footer2">
+        <div id="footer2_left">
+            <p>© 2015 All Rights Reserved. Developed by НАДЬКО :)))</p>
+        </div>
+        <div id="footer2_right">
+            <div class="footer2_right_icons"><a href="#"><img src="images/google.png" alt="google+"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/twitter.png" alt="twitter"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/facebook.png" alt="facebook"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/vkontakte2.png" alt="vkontakte"></a></div>
+            <div class="footer2_right_icons"><a href="#"><img src="images/mail.png" alt="Почта"></a></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
